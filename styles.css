@@ -3,3 +3,86 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  /* TYPOGRAPHY */
+  --fontSize-xxs: 0.75rem;
+  --fontSize-small: 0.875rem;
+  --fontSize-medium: 1rem;
+  --fontSize-large: 1.25rem;
+  --fontSize-xl: 1.5rem;
+  --lineHeight-medium: 24px;
+  --lineHeight-big: 32px;
+  --letterSpacing-small: -1px;
+  --letterSpacing-medium: -0.5px;
+  --letterSpacing-normal: -0.85px;
+  --fontWeight-medium: 500;
+  --fontWeight-semiBold: 600;
+  --fontWeight-Bold: 700;
+
+  /* SPACING */
+  --space1: 0.25rem;
+  --space2: 0.5rem;
+  --space3: 1rem;
+  --space4: 1.5rem;
+  --space5: 2rem;
+
+  /* Clamp Variables */
+  --minimumSize: 1rem;
+  --maximumSize: 2rem;
+  --clampVariable: clamp(var(--minimumSize), 1rem + 1vw, var(--maximumSize));
+
+  /* Shadow Variables */
+  --offsetX: 0;
+  --offsetY: 4px;
+  --dowBlur: 32px;
+  --dowSpread: 2px;
+
+  /* Clamp Variables */
+  --minimumSize: 1rem;
+  --maximumSize: 2rem;
+  --clampVariable: clamp(var(--minimumSize), 1rem + 1vw, var(--maximumSize));
+
+  /* COLOR */
+  --background: #f0f3f7;
+  --text-main: #242729;
+  --green-main: #33c786;
+  --green-text: #ffffff;
+  --light-bg: #f9fafb;
+  --light-bg-text: #242729;
+  --success: #33c786;
+  --success-text: #ffffff;
+  --error-red: #dd3730;
+  --error-text: #ffffff;
+  --grey-soft: #eceef1;
+  --grey-text: #7d8387;
+  --highlight-light-green: #e8f8f1;
+  --highlight-dark-green: #25a066;
+  --card-bg: #ffffff;
+  --card-text: #242729;
+  --border-color: #d6dbe1;
+  --input-bg: #dde1e5;
+  --focus-ring: #33c786;
+  --dowColor: rgba(0, 0, 0, 0.12);
+
+  /* DARK THEME */
+  [data-theme="dark"] {
+    --background: #181c1f;
+    --text-main: #f9fafb;
+    --green-main: #33c786;
+    --green-text: #ffffff;
+    --secondary-bg: #292e33;
+    --secondary-text: #f9fafb;
+    --grey-muted: #292e33;
+    --grey-muted-text: #a1a9b0;
+    --accent-dark-green: #1a6540;
+    --accent-light-text: #e8f8f1;
+    --card-bg: #212528;
+    --card-text: #f9fafb;
+    --border-color: #323639;
+    --input-bg: #323639;
+    --error-red: #dd3730;
+    --success-green: #33c786;
+    --dowColor: rgba(9, 238, 17, 0.12);
+  }
+}
