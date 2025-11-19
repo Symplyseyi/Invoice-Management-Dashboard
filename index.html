@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Invoice Management Dashboard</title>
+    <link rel="stylesheet" href="./styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
@@ -11,363 +12,365 @@
   </head>
   <body>
     <section class="main-section">
-      <div class="header-section">
+      <section class="header-section">
         <div class="left-side-header">
-          <div class="menu-icon">
-            <span class="material-symbols-outlined"> menu </span>
+          <div class="menu-icon-and-logo">
+            <div class="menu-icon">
+              <span class="material-symbols-outlined"> menu </span>
+            </div>
+
+            <div class="logo-container">
+              <h1>Foodager</h1>
+            </div>
           </div>
 
-          <div class="logo-container">
-            <h1>Foodager</h1>
-          </div>
-
-          <div class="search-icon-and-text">
+          <div class="search-icon-and-input">
             <span class="material-symbols-outlined"> search </span>
-            <p>Search</p>
+            <input
+              type="text"
+              class="search-input"
+              name="search"
+              id="search"
+              placeholder="Search"
+            />
           </div>
         </div>
 
         <div class="right-side-header">
           <div class="header-notification-icon">
-            <span class="material-symbols-outlined">
-              notifications_unread
-            </span>
+            <span class="material-symbols-outlined"> notifications </span>
+            <p>.</p>
           </div>
 
           <div class="header-name">
-            <p>PK</p>
-            <p>Philip Kozak</p>
+            <p class="header-text">PK</p>
+            <p class="header-text">Philip Kozak</p>
+            <span class="material-symbols-outlined"> keyboard_arrow_down </span>
           </div>
 
           <div class="header-help-icon">
             <span class="material-symbols-outlined"> help </span>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="sidebar-section">
-        <div class="sidebar-heading">
-          <p>Sample Kitchen</p>
-        </div>
-
-        <div class="sidebar-menu-items">
-          <div class="menu-item">
-            <span class="material-symbols-outlined"> home </span>
-            <p>Home</p>
+      <section class="bottom-section">
+        <div class="sidebar-section">
+          <div class="sidebar-heading">
+            <p>Sample Kitchen</p>
           </div>
 
-          <div class="menu-item">
-            <span class="material-symbols-outlined"> home </span>
-            <select name="order&invoice" id="O&D">
-              <option value="#">Order & Invoice</option>
-              <option value="Catalog">Catalog</option>
-              <option value="Order-Form">Order Form</option>
-              <option value="All-Orders">All Orders</option>
-              <option value="Requested-Orders">Requested Orders</option>
-              <option value="Vendor-Invoice">Vendor Invoice</option>
-            </select>
-          </div>
-
-          <div class="menu-item">
-            <span class="material-symbols-outlined"> book_ribbon </span>
-            <p>Commissary</p>
-          </div>
-
-          <div class="menu-item">
-            <span class="material-symbols-outlined"> description </span>
-            <p>Electronic Invoice</p>
-          </div>
-
-          <div class="menu-item">
-            <span class="material-symbols-outlined"> package_2 </span>
-            <p>Inventory</p>
-          </div>
-
-          <div class="menu-item">
-            <span class="material-symbols-outlined"> menu_book </span>
-            <p>Recipes</p>
-          </div>
-
-          <div class="menu-item">
-            <span class="material-symbols-outlined"> trending_up </span>
-            <p>Point of Sales</p>
-          </div>
-
-          <div class="menu-item">
-            <span class="material-symbols-outlined"> group </span>
-            <p>Item Vendors</p>
-          </div>
-
-          <div class="menu-item">
-            <span class="material-symbols-outlined"> trending_up </span>
-            <p>Trackers</p>
-          </div>
-
-          <div class="menu-item">
-            <span class="material-symbols-outlined"> image </span>
-            <p>Image Vault</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="right-side-section">
-        <div class="rightside-top-section">
-          <div class="rightside-heading">
-            <h1>Vendor Invoice</h1>
-          </div>
-
-          <div class="rightside-top-icons">
-            <span class="material-symbols-outlined">
-              vertical_align_bottom
-            </span>
-            <span class="material-symbols-outlined"> edit_square </span>
-          </div>
-        </div>
-
-        <div class="invoice-rightmiddle-section">
-          <div class="invoice-first-section">
-            <div class="invoice-heading-and-edit">
-              <h1>US FOOD</h1>
-              <div class="edit-and-icon">
-                <span class="material-symbols-outlined"> edit_square </span>
-                <p>Edit</p>
-              </div>
+          <div class="sidebar-menu-items">
+            <div class="menu-item" id="green">
+              <span class="material-symbols-outlined"> home </span>
+              <p>Home</p>
             </div>
 
-            <div class="invoice-heading-details">
-              <div class="heading-sub-details">
-                <div class="sub-details-texts">
-                  <p>Creation Date:</p>
-                  <p>Received Date:</p>
-                </div>
-
-                <div class="sub-details-numbers">
-                  <p>12/03/2025</p>
-                  <p>14/03/2025</p>
-                </div>
-              </div>
-
-              <div class="heading-sub-details">
-                <div class="sub-details-texts">
-                  <p>Invoice No:</p>
-                  <p>Order No:</p>
-                </div>
-
-                <div class="sub-details-numbers">
-                  <p>GH427KJ1F</p>
-                  <p>354</p>
-                </div>
-              </div>
-
-              <div class="heading-sub-details">
-                <div class="sub-details-texts">
-                  <p>Due Date:</p>
-                  <p>Amount:</p>
-                </div>
-
-                <div class="sub-details-numbers">
-                  <p>20/03/2025</p>
-                  <p>$575.00</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="invoice-last-section">
-            <div class="invoice-list-heading">
-              <div class="left-heading">
-                <p>#</p>
-                <p>SKU</p>
-                <p>ITEMS</p>
-              </div>
-
-              <div class="right-heading">
-                <p>QTY</p>
-                <p>PRICE</p>
-                <p>AMT</p>
-              </div>
+            <div class="menu-item" id="green">
+              <span class="material-symbols-outlined"> shopping_cart </span>
+              <p>Vendor Invoice</p>
             </div>
 
-            <div class="invoice-lists">
-              <div class="list">
-                <div class="left-list">
-                  <p>01</p>
-                  <p>01</p>
-
-                  <div class="list-texts">
-                    <p>Artichoke-Heart in Oil</p>
-                    <p>(Bay+Carmel, 100-cty)</p>
-                  </div>
-                </div>
-
-                <div class="right-list">
-                  <div class="right-list-texts">
-                    <p>3 Case</p>
-                    <p>$50.00</p>
-                    <p>150.00</p>
-                  </div>
-
-                  <div class="list-icons">
-                    <span class="material-symbols-outlined"> delete </span>
-                    <span class="material-symbols-outlined"> check </span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="list">
-                <div class="left-list">
-                  <p>02</p>
-                  <p>02</p>
-
-                  <div class="list-texts">
-                    <p>Bacon, Sliced 15x1lb</p>
-                    <p>(Hunt, 100-Meat)</p>
-                  </div>
-                </div>
-
-                <div class="right-list">
-                  <div class="right-list-texts">
-                    <p>2 Case</p>
-                    <p>$52.00</p>
-                    <p>104.00</p>
-                  </div>
-
-                  <div class="list-icons">
-                    <span class="material-symbols-outlined"> delete </span>
-                    <span class="material-symbols-outlined"> check </span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="list">
-                <div class="left-list">
-                  <p>03</p>
-                  <p>03</p>
-
-                  <div class="list-texts">
-                    <p>Bison- Ground 1x1lb</p>
-                    <p>(Meat, 1200-Meat)</p>
-                  </div>
-                </div>
-
-                <div class="right-list">
-                  <div class="right-list-texts">
-                    <p>2Ib</p>
-                    <p>$60.00</p>
-                    <p>120.00</p>
-                  </div>
-
-                  <div class="list-icons">
-                    <span class="material-symbols-outlined"> delete </span>
-                    <span class="material-symbols-outlined"> check </span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="list">
-                <div class="left-list">
-                  <p>04</p>
-                  <p>04</p>
-
-                  <div class="list-texts">
-                    <p>Bacon, Sliced 15x1lb</p>
-                    <p>(Hunt, 100-Meat)</p>
-                  </div>
-                </div>
-
-                <div class="right-list">
-                  <div class="right-list-texts">
-                    <p>2 Case</p>
-                    <p>$55.00</p>
-                    <p>110.00</p>
-                  </div>
-
-                  <div class="list-icons">
-                    <span class="material-symbols-outlined"> delete </span>
-                    <span class="material-symbols-outlined"> check </span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="list">
-                <div class="left-list">
-                  <p>05</p>
-                  <p>05</p>
-
-                  <div class="list-texts">
-                    <p>Bison- Ground 1x1lb</p>
-                    <p>(Meat, 1200-Meat)</p>
-                  </div>
-                </div>
-
-                <div class="right-list">
-                  <div class="right-list-texts">
-                    <p>2 Ib</p>
-                    <p>$54.05</p>
-                    <p>108.10</p>
-                  </div>
-
-                  <div class="list-icons">
-                    <span class="material-symbols-outlined"> delete </span>
-                    <span class="material-symbols-outlined"> check </span>
-                  </div>
-                </div>
-              </div>
+            <div class="menu-item">
+              <span class="material-symbols-outlined"> book_ribbon </span>
+              <p>Commissary</p>
             </div>
 
-            <div class="add-details">
-              <div class="add-icons-and-texts">
-                <span class="material-symbols-outlined"> add </span>
-                <p>Add Row</p>
-              </div>
-
-              <div class="add-icons-and-texts">
-                <span class="material-symbols-outlined"> add </span>
-                <p>Add Non Inventory Item</p>
-              </div>
-
-              <div class="add-icons-and-texts">
-                <span class="material-symbols-outlined"> add </span>
-                <p>Add Charge</p>
-              </div>
-
-              <div class="add-icons-and-texts">
-                <span class="material-symbols-outlined"> add </span>
-                <p>Add Deal Cost</p>
-              </div>
+            <div class="menu-item">
+              <span class="material-symbols-outlined"> description </span>
+              <p>Electronic Invoice</p>
             </div>
 
-            <div class="invoice-total-amount">
-              <div class="sub-toatal">
-                <p>Sub Total:</p>
-                <p>$574.12</p>
-              </div>
+            <div class="menu-item">
+              <span class="material-symbols-outlined"> package_2 </span>
+              <p>Inventory</p>
+            </div>
 
-              <div class="total">
-                <p>Total:</p>
-                <p>$574.12</p>
-              </div>
+            <div class="menu-item">
+              <span class="material-symbols-outlined"> menu_book </span>
+              <p>Recipes</p>
+            </div>
+
+            <div class="menu-item">
+              <span class="material-symbols-outlined"> trending_up </span>
+              <p>Point of Sales</p>
+            </div>
+
+            <div class="menu-item">
+              <span class="material-symbols-outlined"> group </span>
+              <p>Item Vendors</p>
+            </div>
+
+            <div class="menu-item">
+              <span class="material-symbols-outlined"> trending_up </span>
+              <p>Trackers</p>
+            </div>
+
+            <div class="menu-item">
+              <span class="material-symbols-outlined"> image </span>
+              <p>Image Vault</p>
             </div>
           </div>
         </div>
 
-        <div class="rightside-last-section">
-          <div class="delete-invoice">
-            <span class="material-symbols-outlined"> delete </span>
-            <p>Delete Invoice</p>
+        <div class="right-side-section">
+          <div class="rightside-top-section">
+            <div class="rightside-heading">
+              <h1>Vendor Invoice</h1>
+            </div>
+
+            <div class="rightside-top-icons">
+              <span class="material-symbols-outlined"> download </span>
+              <span class="material-symbols-outlined"> edit_square </span>
+            </div>
           </div>
 
-          <div class="approve-invoice">
-            <span class="material-symbols-outlined"> check </span>
-            <p>Approve Invoice</p>
+          <div class="invoice-rightmiddle-section">
+            <div class="invoice-first-section">
+              <div class="invoice-heading-and-edit">
+                <h2>US Foods</h2>
+                <div class="edit-and-icon">
+                  <span class="material-symbols-outlined"> edit_square </span>
+                  <p>Edit</p>
+                </div>
+              </div>
+
+              <div class="invoice-heading-details">
+                <div class="heading-sub-details">
+                  <div class="sub-details">
+                    <p class="label">Creation Date:</p>
+                    <p class="value">12/03/2025</p>
+                  </div>
+
+                  <div class="sub-details">
+                    <p class="label">Received Date:</p>
+                    <p class="value">14/03/2025</p>
+                  </div>
+                </div>
+
+                <div class="heading-sub-details">
+                  <div class="sub-details">
+                    <p class="label">Invoice No:</p>
+                    <p class="value">GH427KJ1F</p>
+                  </div>
+
+                  <div class="sub-details">
+                    <p class="label">Order No:</p>
+                    <p class="value">354</p>
+                  </div>
+                </div>
+
+                <div class="heading-sub-details">
+                  <div class="sub-details">
+                    <p class="label">Due Date:</p>
+                    <p class="value">20/03/2025</p>
+                  </div>
+
+                  <div class="sub-details">
+                    <p class="label">Amount:</p>
+                    <p class="value">$575.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="invoice-last-section">
+              <div class="invoice-list-heading">
+                <div class="left-heading">
+                  <p>#</p>
+                  <p>SKU</p>
+                  <p>ITEMS</p>
+                </div>
+
+                <div class="right-heading">
+                  <p>QTY</p>
+                  <p>PRICE</p>
+                  <p>AMOUNT</p>
+                </div>
+              </div>
+
+              <div class="invoice-lists">
+                <div class="list">
+                  <div class="left-list">
+                    <p class="number">01</p>
+                    <p class="number-list">01</p>
+
+                    <div class="list-texts">
+                      <p>Artichoke-Heart in Oil</p>
+                      <p>(Bay+Carmel, 100-cty)</p>
+                    </div>
+                  </div>
+
+                  <div class="right-list">
+                    <div class="right-list-texts">
+                      <p>3Case</p>
+                      <p>$50.00</p>
+                      <p>150.00</p>
+                    </div>
+
+                    <div class="list-icons">
+                      <span class="material-symbols-outlined"> delete </span>
+                      <span class="material-symbols-outlined"> check </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="list">
+                  <div class="left-list">
+                    <p class="number">02</p>
+                    <p class="number-list">02</p>
+
+                    <div class="list-texts">
+                      <p>Bacon, Sliced 15x1lb</p>
+                      <p>(Hunt, 100-Meat)</p>
+                    </div>
+                  </div>
+
+                  <div class="right-list">
+                    <div class="right-list-texts">
+                      <p>2Case</p>
+                      <p>$52.00</p>
+                      <p>104.00</p>
+                    </div>
+
+                    <div class="list-icons">
+                      <span class="material-symbols-outlined"> delete </span>
+                      <span class="material-symbols-outlined"> check </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="list">
+                  <div class="left-list">
+                    <p class="number">03</p>
+                    <p class="number-list">03</p>
+
+                    <div class="list-texts">
+                      <p>Bison- Ground 1x1lb</p>
+                      <p>(Meat, 1200-Meat)</p>
+                    </div>
+                  </div>
+
+                  <div class="right-list">
+                    <div class="right-list-texts">
+                      <p>2Case</p>
+                      <p>$60.00</p>
+                      <p>120.00</p>
+                    </div>
+
+                    <div class="list-icons">
+                      <span class="material-symbols-outlined"> delete </span>
+                      <span class="material-symbols-outlined"> check </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="list">
+                  <div class="left-list">
+                    <p class="number">04</p>
+                    <p class="number-list">04</p>
+
+                    <div class="list-texts">
+                      <p>Bacon, Sliced 15x1lb</p>
+                      <p>(Hunt, 100-Meat)</p>
+                    </div>
+                  </div>
+
+                  <div class="right-list">
+                    <div class="right-list-texts">
+                      <p>2Case</p>
+                      <p>$55.00</p>
+                      <p>110.00</p>
+                    </div>
+
+                    <div class="list-icons">
+                      <span class="material-symbols-outlined"> delete </span>
+                      <span class="material-symbols-outlined"> check </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="list">
+                  <div class="left-list">
+                    <p class="number">05</p>
+                    <p class="number-list">05</p>
+
+                    <div class="list-texts">
+                      <p>Bison- Ground 1x1lb</p>
+                      <p>(Meat, 1200-Meat)</p>
+                    </div>
+                  </div>
+
+                  <div class="right-list">
+                    <div class="right-list-texts">
+                      <p>2Case</p>
+                      <p>$54.05</p>
+                      <p>108.10</p>
+                    </div>
+
+                    <div class="list-icons">
+                      <span class="material-symbols-outlined"> delete </span>
+                      <span class="material-symbols-outlined"> check </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="add-details">
+                <div class="add-icons-and-texts">
+                  <span class="material-symbols-outlined"> add </span>
+                  <p>Add Row</p>
+                </div>
+
+                <div class="add-icons-and-texts">
+                  <span class="material-symbols-outlined"> add </span>
+                  <p>Add Non Inventory Item</p>
+                </div>
+
+                <div class="add-icons-and-texts">
+                  <span class="material-symbols-outlined"> add </span>
+                  <p>Add Charge</p>
+                </div>
+
+                <div class="add-icons-and-texts">
+                  <span class="material-symbols-outlined"> add </span>
+                  <p>Add Deal Cost</p>
+                </div>
+              </div>
+
+              <div class="invoice-total-amount">
+                <div class="sub-total">
+                  <p>Sub Total:</p>
+                  <p>$574.12</p>
+                </div>
+
+                <div class="total">
+                  <p>Total:</p>
+                  <p>$574.12</p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="approve-and-next">
-            <span class="material-symbols-outlined"> check </span>
-            <p>Approve & Next</p>
+          <div class="rightside-last-section">
+            <div class="delete-invoice">
+              <span class="material-symbols-outlined"> delete </span>
+              <p>Delete Invoice</p>
+            </div>
+
+            <div class="approve-invoice">
+              <span class="material-symbols-outlined"> check </span>
+              <p>Approve Invoice</p>
+            </div>
+
+            <div class="approve-and-next">
+              <span class="material-symbols-outlined"> check </span>
+              <p>Approve & Next</p>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </section>
+    >
   </body>
 </html>
