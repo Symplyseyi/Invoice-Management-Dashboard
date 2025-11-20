@@ -398,7 +398,7 @@
   color: var(--highlight-dark-green);
 }
 
-#green p {
+#green a {
   color: var(--highlight-dark-green);
 }
 
@@ -407,7 +407,7 @@
   color: var(--sidebar-text);
 }
 
-.menu-item p {
+.menu-item a {
   font-size: var(--fontSize-smallmedium);
   color: var(--sidebar-text);
   font-weight: var(--fontWeight-semiBold);
