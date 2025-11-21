@@ -206,6 +206,7 @@
   align-items: center;
   column-gap: var(--space1);
   padding: var(--space0);
+  transition: all 0.2s ease;
 }
 
 .search-icon-and-input:has(.search-input:focus) {
